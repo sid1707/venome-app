@@ -9,12 +9,13 @@ import base64
 import plotly.express as px
 
 username_password = [
-    ['siddharth', 'Gene@2400'], ['username', 'password']
+    ['siddharth', 'venomics'], ['username', 'password']
 ]
 
 app = dash.Dash()
 auth = dash_auth.BasicAuth(app, username_password)
 server = app.server
+
 app.layout = html.Div([
     html.Div([
         'Upload the file',
