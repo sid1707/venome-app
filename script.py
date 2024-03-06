@@ -8,7 +8,7 @@ import base64
 import plotly.express as px
 
 app = dash.Dash()
-server = app.server(debug=True, host='0.0.0.0', port=8050)
+server = app.server()
 
 app.layout = html.Div([
     html.Div([
