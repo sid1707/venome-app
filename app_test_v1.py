@@ -7,13 +7,13 @@ import pandas as pd
 import base64
 import plotly.express as px
 import json
-import dash_auth
+#import dash_auth
 
 
-username_password_pair=[['siddharth','evl123'],['username','password']]
+#username_password_pair=[['siddharth','evl123'],['username','password']]
 
 app = dash.Dash()
-auth=app.dash_auth.BasicAuth(app, username_password_pair)
+#auth=app.dash_auth.BasicAuth(app, username_password_pair)
 server=app.server()
 
 app.layout = html.Div(children=[
