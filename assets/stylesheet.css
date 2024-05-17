@@ -1,0 +1,49 @@
+.div-level-2 {
+    display:flex;
+    justify-content: space-between;
+}
+
+.div-level-3 {
+    width: 50%;
+    background-color: #F6F5F2;
+    padding: 1%;
+    font-family: Arial;
+    color: #32012F;
+}
+
+.div-level-4 {
+    width: 50%;
+
+}
+
+.header {
+    text-align: center;
+    font-family: Arial;
+    background-color: #32012F;
+    color: #FFFFFF;
+    padding-left: 10%;
+}
+
+.software-used {
+    width: 100%;
+    padding: 1%;
+}
+
+.button {
+    border: 1px solid #F0EBE3;
+    border-radius: 5px;
+    padding: 1%;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-control {
+    padding:5px 0px
+}
+
+.hover-text:hover {
+    color: #32012F;
+    text-decoration: underline;
+}
