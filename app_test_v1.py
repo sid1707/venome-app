@@ -6,15 +6,12 @@ from dash import html
 import pandas as pd
 import base64
 import plotly.express as px
-import json
-#import dash_auth
 
-
-#username_password_pair=[['siddharth','evl123'],['username','password']]
+#username_password_pair = [['siddharth', 'evl123'], ['username', 'password']]
 
 app = dash.Dash()
-#auth=app.dash_auth.BasicAuth(app, username_password_pair)
-server=app.server()
+#auth = app.dash_auth.BasicAuth(app, username_password_pair)
+server = app.server
 
 app.layout = html.Div(children=[
     html.Div(className='div-level-1', children=[
@@ -205,7 +202,7 @@ def download_csv(n_clicks, tox_abundance_json):
         return None
     try:
         # Ensure the JSON data is correctly parsed and convert
-        tox_abundance = pd.read_json(io.StringIO(tox_abundance_json),orient='split')
+        tox_abundance = pd.read_json(io.StringIO(tox_abundance_json), orient='split')
         print(tox_abundance)
         print(type(tox_abundance))
         # Create a CSV string from the DataFrame
